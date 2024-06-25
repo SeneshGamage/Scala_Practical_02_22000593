@@ -13,7 +13,7 @@ object App {
         println({a += 1; a})
 
         //expression 3
-        val g: Float = 3.0f
+        val g: Float = 4.0f
         println(-2 * (g - k) + c)
 
         //expression 4
