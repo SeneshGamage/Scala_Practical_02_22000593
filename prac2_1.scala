@@ -5,30 +5,22 @@ object App {
     var c = 4
     var d = 5
     val k = 4.3f
-    val g = ??? // You need to provide a value for 'g'
 
-    // Expression 1
-    val result1 = -(-b) * a + c * d
-    println(s"Expression 1 result: $result1") // Output: 26
+        //expression 1
+        println(-(-b) * a + c * d - (-c))
 
-    // Expression 2
-    println(s"Initial value of 'a': $a")
-    a += 1
-    println(s"After increment: $a")
+        //expression 2
+        println({a += 1; a})
 
-    // // Expression 3
-    // val result3 = -2 * (g - k) + c
-    // println(s"Expression 3 result: $result3") // Output: -1.4
+        //expression 3
+        val g: Float = 3.0f
+        println(-2 * (g - k) + c)
 
-    // Expression 4
-    println(s"Initial value of 'c': $c")
-    c += 1
-    println(s"After increment: $c")
+        //expression 4
+        println ({c += 1; c});
 
-    // Expression 5
-    c += 1
-    a += 1
-    val result5 = c * a
-    println(s"Expression 5 result: $result5")
+        //expression 5
+        print({c += 1 ; a+=1; c * a})
+
   }
 }
